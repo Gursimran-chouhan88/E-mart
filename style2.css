@@ -1,0 +1,17 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial , sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.cart-container{
+    text-align: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: #333;
+    border: 2px solid black;
+}

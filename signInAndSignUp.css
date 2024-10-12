@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial , sans-serif;
+}
+
+body{
+  background-image: url(static/background-image.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* SignIn and Sign Up page  */
+.form{
+  display: none;
+}
+
+/* show active form when radio button is checked */
+#signIn:checked ~ .signIn-form,
+#signUp:checked ~ .signUp-form{
+   display: block;
+}
+
+input[type="radio"]:checked + label{
+  background-color: green; 
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+
+form{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* style for submit button  */
+button[type="submit"] {
+  width: 100%;
+  font-size: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: none;
+  background-color: #46cab8;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #ff4500;
+}
+
+/* style for labels  */
+.form-label{
+  cursor: pointer;
+  padding: 1em 2em;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 0.5em;
+  border-radius: 4px 4px 0 0;
+  transition: background-color 0.3s ease;
+  color: blue; /* Color for switch links */
+}
+
+.form-label:hover{
+  color: #ff4500;
+  cursor: pointer;
+}
+
+.form-text {
+  font-size: 0.9em;
+  margin-top: 1em;
+  }
+
+.form-text label:hover {
+    text-decoration: underline; /* Underline effect for switch links */
+}
+ 
+.form-container {
+    
+    width: 100%;
+    max-width: 376px;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 2em;
+}
