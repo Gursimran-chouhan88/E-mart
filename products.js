@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((res) => res.json())
     .then((data) => {
       const productList = document.getElementById("product-list");
-
+      console.log(data);
       data
         .forEach(function (product) {
           const card = document.createElement("div");
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <img src="${product.image}" class="card-img-top"
          alt="${product.name}">
           <div class="card-body"> <!-- Use flexbox for vertical alignment -->
-          <h5 class="card-title">${product.name}</h5>
+          <h5 class="card-title">${product.title}</h5>
           <p class="card-text">${product.description}</p>
           <p class="card-text font-weightbold">$${product.price.toFixed(2)}</p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
