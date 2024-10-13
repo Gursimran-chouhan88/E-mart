@@ -25,6 +25,6 @@ I'm a full stack developer...
 - Enhanced Front-End Skills: Improved proficiency in HTML, CSS, and JavaScript by creating dynamic and responsive web pages.
 - Bootstrap Utilization: Leveraged Bootstrap to ensure a mobile-friendly design, enhancing user experience across various devices.
 
-## Support
+## Feedback
 
-For support, email gursimranjeet0786@gmail.com .
+If you have any feedback, please reach out to us at gursimranjeet@gmail.com
